@@ -1,19 +1,41 @@
-import {BadRequestException, Body, Controller, Delete, Get, Param, Post, Put} from '@nestjs/common';
+import {
+    BadRequestException,
+    Body,
+    ClassSerializerInterceptor,
+    Controller,
+    Delete,
+    Get,
+    Param,
+    Post,
+    Put,
+    Req,
+    UseGuards,
+    UseInterceptors
+} from '@nestjs/common';
 import {RegisterDto} from "./register.dto";
 import {UserService} from "./user.service";
 import {UserUpdateDto} from "./user-update.dto";
 import * as bcrypt from 'bcrypt';
+import {Request} from "express";
+import {JwtService} from "@nestjs/jwt";
+import {AuthGuard} from "../auth/auth.guard";
 
 @Controller('user')
 export class UserController {
-    constructor(private userService: UserService) {
+    constructor(
+        private userService: UserService,
+        private jwtService: JwtService) {
 
     }
 
 
+    @UseGuards(AuthGuard)
+    @UseInterceptors(ClassSerializerInterceptor)
     @Get("me")
-    profile(){
-        return "Blaž Osredkar";
+    async profile(@Req() request: Request){
+        const jwt = request.cookies["jwt"];
+        const data = await this.jwtService.verifyAsync(jwt);
+        return this.userService.findOne(data.id);
     }
 
     @Post()
