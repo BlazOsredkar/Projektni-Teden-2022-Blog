@@ -33,7 +33,7 @@ const Register = () => {
 
       if(response.status == 201){
           navigation({
-              pathname: "/"
+              pathname: "/login"
           });
       }
 
