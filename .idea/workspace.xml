@@ -2,19 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10ac780c-a0f0-4cfd-aad6-1dc96782bec5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/src/auth/login.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/post/create-post.dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/post/post.entity.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/App.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Nav.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/card.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/footer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/title.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Home.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Login.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Register.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/react-app-env.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/reportWebVitals.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/setupTests.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/user/user-update.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/user/user-update.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/user/user.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/user/user.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/user/user.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/user/user.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/user/user.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/user/user.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/user/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/user/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/post/post.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/post/post.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/post/post.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/post/post.entity.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,16 +55,20 @@
     <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="280N6kV2rCEfw3jqiddMDEemoFp" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/OSTips/WebstormProjects/projektni/backend/src/post",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -59,6 +80,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\OSTips\WebstormProjects\projektni\backend\src\post" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -70,7 +96,8 @@
       <workItem from="1650349373886" duration="14454000" />
       <workItem from="1650377465668" duration="795000" />
       <workItem from="1650390582538" duration="706000" />
-      <workItem from="1650434988237" duration="13763000" />
+      <workItem from="1650434988237" duration="14607000" />
+      <workItem from="1650521449819" duration="7147000" />
     </task>
     <servers />
   </component>
@@ -87,6 +114,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
