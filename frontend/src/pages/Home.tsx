@@ -1,11 +1,19 @@
 import React from "react";
 import Nav from "../components/Nav";
+import Title from "../components/title";
+import Card from "../components/card";
+import Footer from "../components/footer";
 
 const Home = () => {
   return(
       <>
-          <Nav />
-          <h1>HOME</h1>
+          <Nav/>
+          <main>
+              <Title/>
+              <Card/>
+
+          </main>
+          <Footer/>
       </>
   )
 }

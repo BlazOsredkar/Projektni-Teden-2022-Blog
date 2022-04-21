@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 
 const Nav = () => {
@@ -16,9 +17,9 @@ const Nav = () => {
                         <div className="col-sm-4 offset-md-1 py-4">
                             <h4 className="text-white">Contact</h4>
                             <ul className="list-unstyled">
-                                <li><a href="#" className="text-white">Home</a></li>
-                                <li><a href="#" className="text-white">Login</a></li>
-                                <li><a href="#" className="text-white">Register</a></li>
+                                <li><Link to={"/"} className="text-white">Home</Link></li>
+                                <li><Link to={"/login"} className="text-white">Login</Link></li>
+                                <li><Link to={"/register"} className="text-white">Register</Link></li>
                             </ul>
                         </div>
                     </div>
