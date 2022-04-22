@@ -4,6 +4,8 @@ import {Link, Navigate, useNavigate} from "react-router-dom";
 import axios from "axios";
 import Footer from "../components/footer";
 import "./login.css"
+import background from "./pictures/retrosupply-jLwVAUtLOAQ-unsplash.jpg";
+
 
 const Login = () => {
     const navigation = useNavigate();
@@ -39,11 +41,9 @@ const Login = () => {
 
     return(
         <>
-
-
-            <main className="form-signin">
+            <main className="form-signin" >
                 <form onSubmit={submit}>
-                    <h1 className="h3 mb-3 fw-normal">Please sign in</h1>
+                    <h1 className="h3 mb-3 fw-normal center">Prijava</h1>
 
                     <label>Email</label>
                     <div className="form-floating">
@@ -68,12 +68,16 @@ const Login = () => {
                     
                     <a href="register" className="w-100 btn btn-lg btn-primary btnreg">Registracija</a>
 
-                    <p className="mt-5 mb-3 text-muted">&copy; 2017–2022</p>
+                    <p className="mt-5 mb-3 text-muted center">&copy; 2017–2022</p>
                 </form>
+
+
             </main>
 
 
-            <Footer/>
+
+
+
         </>
     )
 }

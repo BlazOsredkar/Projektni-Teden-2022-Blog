@@ -1,0 +1,25 @@
+body {
+    padding-top: 5rem;
+}
+.textic{
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #0d6efd;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    text-align: right;
+}
+@media (min-width: 768px) {
+    .navbar-brand.abs
+    {
+        position: absolute;
+        width: auto;
+        left: 95.5%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+}
+
+a:hover {
+    cursor:pointer;
+}
