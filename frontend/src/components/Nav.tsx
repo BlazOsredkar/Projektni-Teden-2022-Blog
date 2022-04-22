@@ -1,8 +1,21 @@
-import React from "react";
-import {Link} from "react-router-dom";
+import React, {useEffect, useState} from "react";
+import {Link, useNavigate} from "react-router-dom";
+import axios from "axios";
 
 
 const Nav = () => {
+
+    const navigation = useNavigate();
+    const Odjava = async ()=>{
+        const res = await axios.post("http://localhost:3000/auth/logout", {},{withCredentials:true});
+        if(res.status == 201){
+            navigation({pathname:"/login"})
+        }
+
+    };
+
+
+
     return(
         <header>
             <div className="collapse bg-dark" id="navbarHeader">
@@ -20,6 +33,8 @@ const Nav = () => {
                                 <li><Link to={"/"} className="text-white">Home</Link></li>
                                 <li><Link to={"/login"} className="text-white">Login</Link></li>
                                 <li><Link to={"/register"} className="text-white">Register</Link></li>
+                                <li><Link to={"/create-post"} className="text-white">Create post</Link></li>
+                                <li><a className="text-white" onClick={Odjava}>Odjava</a></li>
                             </ul>
                         </div>
                     </div>

@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10ac780c-a0f0-4cfd-aad6-1dc96782bec5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Cards.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/CreatePost.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/UpdatePost.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Register.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/post/create-post.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/post/create-post.dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/post/post.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/post/post.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/post/post.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/post/post.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Nav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/title.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Home.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +50,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/OSTips/WebstormProjects/projektni/backend/src/post",
+    "last_opened_file_path": "C:/Users/OSTips/WebstormProjects/projektni/frontend/src/pages",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -55,6 +64,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\OSTips\WebstormProjects\projektni\frontend\src\pages" />
       <recent name="C:\Users\OSTips\WebstormProjects\projektni\backend\src\post" />
     </key>
   </component>
@@ -70,7 +80,8 @@
       <workItem from="1650377465668" duration="795000" />
       <workItem from="1650390582538" duration="706000" />
       <workItem from="1650434988237" duration="14607000" />
-      <workItem from="1650521449819" duration="14483000" />
+      <workItem from="1650521449819" duration="14894000" />
+      <workItem from="1650607821931" duration="13003000" />
     </task>
     <servers />
   </component>

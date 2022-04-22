@@ -38,6 +38,7 @@ export class PostController {
 
         return this.postService.create({
             content: data.content,
+            title: data.title,
             user: {
                 id: user.id
             }

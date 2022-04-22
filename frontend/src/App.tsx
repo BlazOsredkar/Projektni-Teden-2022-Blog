@@ -1,13 +1,11 @@
 import React from 'react';
 import './App.css';
-import Nav from "./components/Nav";
-import Title from './components/title';
-import Card from "./components/card";
-import Footer from "./components/footer";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from './pages/Home';
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import CreatePost from "./pages/CreatePost";
+import UpdatePost from "./pages/UpdatePost";
 
 function App() {
   return (
@@ -17,6 +15,8 @@ function App() {
                 <Route path={"/"} element={<Home />} />
                 <Route path={"/login"} element={<Login />} />
                 <Route path={"/register"} element={<Register />} />
+                <Route path={"/create-post"} element={<CreatePost />} />
+                <Route path={"/update-post/:id"} element={<UpdatePost />} />
             </Routes>
         </BrowserRouter>
     </>

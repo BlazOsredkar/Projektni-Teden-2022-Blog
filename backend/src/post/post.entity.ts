@@ -17,6 +17,9 @@ export class Post {
     @Column()
     content: string;
 
+    @Column()
+    title: string;
+
     @CreateDateColumn()
     created_at: Date;
 

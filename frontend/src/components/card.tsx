@@ -1,11 +1,18 @@
 import React from "react";
+import axios from "axios";
+import {Link} from "react-router-dom";
 
-const Card = () => {
+const Card = ({content,title, id, owner}:{content:string,title:string,id:number,owner:boolean}) => {
+
+    const deletepost = async () => {
+      const res = await axios.delete(`http://localhost:3000/post/${id}`,{withCredentials:true});
+      console.log(res);
+
+      if(res.status==200){
+          window.location.reload();
+      }
+    }
   return(
-      <div className="album py-5 bg-light">
-          <div className="container">
-
-              <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                   <div className="col">
                       <div className="card shadow-sm">
                           <svg className="bd-placeholder-img card-img-top" width="100%" height="225"
@@ -16,21 +23,22 @@ const Card = () => {
                           </svg>
 
                           <div className="card-body">
-                              <p className="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                  additional content. This content is a little bit longer.</p>
+                              <b className="card-text">{title}</b>
+                              <p className="card-text">{content}</p>
                               <div className="d-flex justify-content-between align-items-center">
                                   <div className="btn-group">
-                                      <button type="button" className="btn btn-sm btn-outline-secondary">View</button>
-                                      <button type="button" className="btn btn-sm btn-outline-secondary">Edit</button>
+                                      <button type="button" className="btn btn-sm btn-outline-secondary" onClick={deletepost}>Delete</button>
+                                      {
+                                          owner && (<Link to={"/update-post/"+id} className="btn btn-sm btn-outline-secondary">Edit</Link>)
+                                      }
+
                                   </div>
                                   <small className="text-muted">9 mins</small>
                               </div>
                           </div>
                       </div>
                   </div>
-              </div>
-          </div>
-      </div>
+
   )
 }
 export default Card;
