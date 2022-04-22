@@ -4,6 +4,8 @@ import axios from "axios";
 import "./register.css"
 import Footer from "../components/footer";
 import {useNavigate} from "react-router-dom";
+import Nav2 from "../components/nav2";
+import ("../components/nav2");
 
 
 
@@ -42,13 +44,13 @@ const Register = () => {
 
     return(
         <>
-            <Nav />
+
 
             <main className="form-signin">
                 <form onSubmit={submit}>
-                    <h1 className="h3 mb-3 fw-normal">Please sign in</h1>
+                    <h1 className="h3 mb-3 fw-normal center">Registracija</h1>
 
-                    <label>First name</label>
+                    <label>Ime</label>
                     <div className="form-floating">
                         <input type="text" className="form-control"
                                placeholder="Name"
@@ -56,7 +58,7 @@ const Register = () => {
 
                     </div>
 
-                    <label>Last name</label>
+                    <label>Priimek</label>
                     <div className="form-floating">
                         <input type="text" className="form-control"
                                placeholder="Last name"
@@ -65,7 +67,7 @@ const Register = () => {
 
                     </div>
 
-                    <label>Email</label>
+                    <label>E-pošta</label>
                     <div className="form-floating">
                         <input type="email" className="form-control"
                                placeholder="name@example.com"
@@ -74,7 +76,7 @@ const Register = () => {
 
                     </div>
 
-                    <label>Password</label>
+                    <label>Geslo</label>
                     <div className="form-floating">
                         <input type="password" className="form-control"
                                placeholder="Password"
@@ -82,7 +84,7 @@ const Register = () => {
                         />
                     </div>
 
-                    <label>Retype password</label>
+                    <label>Potrdi geslo</label>
                     <div className="form-floating">
                         <input type="password" className="form-control"
                                placeholder="Confirm Password"
@@ -93,13 +95,13 @@ const Register = () => {
 
 
 
-                    <button className="w-100 btn btn-lg btn-primary" type="submit">Register</button>
-                    <p className="mt-5 mb-3 text-muted">&copy; 2017–2022</p>
+                    <button className="w-100 btn btn-lg btn-primary" type="submit">Registracija</button>
+                    <p className="mt-5 mb-3 text-muted center">&copy; 2017–2022</p>
                 </form>
             </main>
 
 
-            <Footer/>
+
         </>
     )
 }

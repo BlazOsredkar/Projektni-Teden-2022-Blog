@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10ac780c-a0f0-4cfd-aad6-1dc96782bec5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/nav2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/nav2.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/pictures/retrosupply-jLwVAUtLOAQ-unsplash.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ikonice/logout.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/CreatePost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/CreatePost.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/nav2.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/nav2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/nav2.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/nav2.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/title.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Register.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/register.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +67,9 @@
       <recent name="C:\Users\OSTips\WebstormProjects\projektni\backend\src\post" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Uporabnik\Documents\GitHub\Projektni-Teden-2022-Blog\frontend\src\components" />
+      <recent name="C:\Users\Uporabnik\Documents\GitHub\Projektni-Teden-2022-Blog\frontend\src\pages" />
+      <recent name="C:\Users\Uporabnik\Documents\GitHub\Projektni-Teden-2022-Blog\frontend\src\icons" />
       <recent name="C:\Users\Uporabnik\Documents\GitHub\Projektni-Teden-2022-Blog\frontend\src\pages\pictures" />
     </key>
   </component>
@@ -82,7 +88,7 @@
       <workItem from="1650521449819" duration="14894000" />
       <workItem from="1650607821931" duration="13003000" />
       <workItem from="1650634503799" duration="494000" />
-      <workItem from="1650655923243" duration="6340000" />
+      <workItem from="1650655923243" duration="10921000" />
     </task>
     <servers />
   </component>

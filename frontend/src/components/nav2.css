@@ -23,3 +23,8 @@ body {
 a:hover {
     cursor:pointer;
 }
+
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
