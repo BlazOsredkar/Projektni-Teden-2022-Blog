@@ -2,14 +2,15 @@ import React from "react";
 import axios from "axios";
 import {Link} from "react-router-dom";
 
-const Card = ({content,title, id, owner}:{content:string,title:string,id:number,owner:boolean}) => {
+const Card = ({content,title, id, owner, loadPosts}:{content:string,title:string,id:number,owner:boolean,loadPosts:any}) => {
 
     const deletepost = async () => {
       const res = await axios.delete(`http://localhost:3000/post/${id}`,{withCredentials:true});
       console.log(res);
 
       if(res.status==200){
-          window.location.reload();
+          //window.location.reload();
+          await loadPosts()
       }
     }
   return(
@@ -27,7 +28,7 @@ const Card = ({content,title, id, owner}:{content:string,title:string,id:number,
                               <p className="card-text">{content}</p>
                               <div className="d-flex justify-content-between align-items-center">
                                   <div className="btn-group">
-                                      <button type="button" className="btn btn-sm btn-outline-secondary" onClick={deletepost}>Delete</button>
+                                      {owner && <button type="button" className="btn btn-sm btn-outline-secondary" onClick={deletepost}>Delete</button>}
                                       {
                                           owner && (<Link to={"/update-post/"+id} className="btn btn-sm btn-outline-secondary">Edit</Link>)
                                       }

@@ -1,8 +1,9 @@
 import React, {SyntheticEvent, useState} from "react";
 import Nav from "../components/Nav";
-import {Navigate, useNavigate} from "react-router-dom";
+import {Link, Navigate, useNavigate} from "react-router-dom";
 import axios from "axios";
 import Footer from "../components/footer";
+import "./login.css"
 
 const Login = () => {
     const navigation = useNavigate();
@@ -32,13 +33,13 @@ const Login = () => {
 
     }
     if(redirect){
-        return <Navigate to="/" />;
+        return <Navigate to="/home" />;
     }
 
 
     return(
         <>
-            <Nav />
+
 
             <main className="form-signin">
                 <form onSubmit={submit}>
@@ -63,7 +64,10 @@ const Login = () => {
 
 
 
-                    <button className="w-100 btn btn-lg btn-primary" type="submit">Register</button>
+                    <button className="w-100 btn btn-lg btn-primary " type="submit">Prijava</button>
+                    
+                    <a href="register" className="w-100 btn btn-lg btn-primary btnreg">Registracija</a>
+
                     <p className="mt-5 mb-3 text-muted">&copy; 2017–2022</p>
                 </form>
             </main>

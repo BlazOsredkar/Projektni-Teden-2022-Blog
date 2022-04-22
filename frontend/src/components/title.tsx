@@ -1,18 +1,34 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
+import axios from "axios";
 
 const Title = () => {
+    const [user,setUser]=useState<any>(null);
+
+    const getUser = async () => {
+        const res = await axios.get("http://localhost:3000/user/me",{withCredentials:true});
+        if(res.status==200){
+            setUser(res.data);
+        }
+        console.log(res)
+    }
+
+    useEffect(() => {
+        getUser();
+    }, []);
   return(
       <section className="py-5 text-center container">
           <div className="row py-lg-5">
               <div className="col-lg-6 col-md-8 mx-auto">
-                  <h1 className="fw-light">Blog </h1>
+                  {user && <h1 className="fw-light">Pozdravljen, {user.first_name} {user.last_name}</h1>}
                   <p className="lead text-muted">Something short and leading about the collection below—its contents, the
                       creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it
                       entirely.</p>
-                  <p>
-                      <a href="#" className="btn btn-primary my-2">Main call to action</a>
-                      <a href="#" className="btn btn-secondary my-2">Secondary action</a>
-                  </p>
+                  {
+                      user && (<p>
+                          <a href="create-post" className="btn btn-primary my-2">Ustvari blog objavo</a>
+                      </p>)
+                  }
+
               </div>
           </div>
       </section>

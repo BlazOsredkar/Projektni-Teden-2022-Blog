@@ -56,7 +56,15 @@ export class PostController {
     }
 
     @Delete(":id")
-    delete(@Param("id")id: number){
+    async delete(@Param("id")id: number,@Req() request: Request){
+        const jwt = request.cookies["jwt"];
+        const user = await this.jwtService.verifyAsync(jwt);
+
+        const post = await this.postService.findOne(id);
+
+        if(post.user.id != user.id){
+            throw new UnauthorizedException("Nisi lastnik!")
+        }
         return this.postService.delete(id);
     }
 

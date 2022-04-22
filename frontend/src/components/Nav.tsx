@@ -23,14 +23,12 @@ const Nav = () => {
                     <div className="row">
                         <div className="col-sm-8 col-md-7 py-4">
                             <h4 className="text-white">About</h4>
-                            <p className="text-muted">Add some information about the album below, the author, or any other
-                                background context. Make it a few sentences long so folks can pick up some informative tidbits. Then,
-                                link them off to some social networking sites or contact information.</p>
+                            <p className="text-muted"></p>
                         </div>
                         <div className="col-sm-4 offset-md-1 py-4">
                             <h4 className="text-white">Contact</h4>
                             <ul className="list-unstyled">
-                                <li><Link to={"/"} className="text-white">Home</Link></li>
+                                <li><Link to={"/home"} className="text-white">Home</Link></li>
                                 <li><Link to={"/login"} className="text-white">Login</Link></li>
                                 <li><Link to={"/register"} className="text-white">Register</Link></li>
                                 <li><Link to={"/create-post"} className="text-white">Create post</Link></li>

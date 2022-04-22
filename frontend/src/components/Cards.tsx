@@ -26,7 +26,7 @@ const Cards = () => {
                     if(user && post.user.id==user.id){
                         owner = true;
                     }
-                    return <Card key={i} content={post.content} title={post.title} id={post.id} owner={owner}/>;
+                    return <Card key={i} content={post.content} title={post.title} id={post.id} owner={owner} loadPosts={loadPosts}/>;
                 })
 
                 }

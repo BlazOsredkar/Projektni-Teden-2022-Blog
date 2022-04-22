@@ -3,6 +3,7 @@ import Nav from "../components/Nav";
 import axios from "axios";
 import title from "../components/title";
 import {useNavigate} from "react-router-dom";
+import Footer from "../components/footer";
 
 const CreatePost = ()=>{
     const navigation = useNavigate();
@@ -20,7 +21,7 @@ const CreatePost = ()=>{
       });
       if (response.status==201){
           navigation({
-              pathname: "/",
+              pathname: "/home",
               }
           )
       }
@@ -35,12 +36,13 @@ const CreatePost = ()=>{
             <main className="form-signin">
                 <form onSubmit={submit}>
                     <h1 className="h3 mb-3 fw-normal">Create post</h1>
-                    <input type={"text"} onChange={event => setContent(event.target.value)}/>
                     <input type={"text"} onChange={event => setTitle(event.target.value)}/>
+                    <input type={"text"} onChange={event => setContent(event.target.value)}/>
                     <button className="w-100 btn btn-lg btn-primary" type="submit">Create</button>
                     <p className="mt-5 mb-3 text-muted">&copy; 2017–2022</p>
                 </form>
             </main>
+            <Footer />
         </>
     )
 };
