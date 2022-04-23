@@ -3,6 +3,7 @@ import Nav from "../components/Nav";
 import axios from "axios";
 import title from "../components/title";
 import {useNavigate, useParams} from "react-router-dom";
+import Nav2 from "../components/nav2";
 
 const UpdatePost = ()=>{
     const navigation = useNavigate();
@@ -48,15 +49,21 @@ const UpdatePost = ()=>{
 
     return(
         <>
-            <Nav />
+            <Nav2 />
 
             <main className="form-signin">
                 <form onSubmit={submit}>
-                    <h1 className="h3 mb-3 fw-normal">Create post</h1>
-                    <input type={"text"} onChange={event => setTitle(event.target.value)} value={title}/>
-                    <input type={"text"} onChange={event => setContent(event.target.value)} value={content}/>
-                    <button className="w-100 btn btn-lg btn-primary" type="submit">Edit</button>
-                    <p className="mt-5 mb-3 text-muted">&copy; 2017–2022</p>
+                    <h1 className="h3 mb-3 fw-normal center">Uredi objavo:</h1>
+                    <div className={""}><h1>{title}</h1></div>
+                    <label>Naslov</label>
+                    <div className={"form-floating"}>
+                    <input type={"text"} onChange={event => setTitle(event.target.value)} placeholder={"Naslov"} maxLength={50} value={title}/>
+                    </div>
+                    <label>Objava</label>
+                    <div className={"form-floating"}>
+                        <textarea  onChange={event => setContent(event.target.value)} value={content}/></div>
+                    <button className="w-100 btn btn-lg btn-primary" type="submit">Uredi objavo</button>
+
                 </form>
             </main>
         </>

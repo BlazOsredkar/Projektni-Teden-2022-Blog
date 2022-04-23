@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10ac780c-a0f0-4cfd-aad6-1dc96782bec5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/ikonice/logout.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/nav2.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/nav2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/nav2.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/nav2.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/title.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/title.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Register.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/register.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/CreatePost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/CreatePost.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/UpdatePost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/UpdatePost.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/login.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,24 +36,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/OSTips/WebstormProjects/projektni/frontend/src/pages",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
-    "ts.external.directory.path": "C:\\Users\\Uporabnik\\Documents\\GitHub\\Projektni-Teden-2022-Blog\\backend\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenDatabaseViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Uporabnik&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Uporabnik\\Documents\\GitHub\\Projektni-Teden-2022-Blog\\backend\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\OSTips\WebstormProjects\projektni\frontend\src\pages" />
@@ -89,6 +83,7 @@
       <workItem from="1650607821931" duration="13003000" />
       <workItem from="1650634503799" duration="494000" />
       <workItem from="1650655923243" duration="10921000" />
+      <workItem from="1650709389085" duration="2149000" />
     </task>
     <servers />
   </component>

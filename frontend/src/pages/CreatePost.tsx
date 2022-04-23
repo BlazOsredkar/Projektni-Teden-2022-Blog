@@ -4,6 +4,7 @@ import axios from "axios";
 import title from "../components/title";
 import {useNavigate} from "react-router-dom";
 import Footer from "../components/footer";
+import Nav2 from "../components/nav2";
 
 const CreatePost = ()=>{
     const navigation = useNavigate();
@@ -31,15 +32,21 @@ const CreatePost = ()=>{
 
     return(
         <>
-            <Nav />
+            <Nav2 />
 
             <main className="form-signin">
                 <form onSubmit={submit}>
                     <h1 className="h3 mb-3 fw-normal">Create post</h1>
-                    <input type={"text"} onChange={event => setTitle(event.target.value)}/>
-                    <input type={"text"} onChange={event => setContent(event.target.value)}/>
-                    <button className="w-100 btn btn-lg btn-primary" type="submit">Create</button>
-                    <p className="mt-5 mb-3 text-muted">&copy; 2017–2022</p>
+
+                    <label>Naslov (max 50 znakov)</label>
+                    <div className={"form-floating"}>
+                        <input type={"text"} onChange={event => setTitle(event.target.value)} placeholder={"Naslov"} maxLength={50} value={title}/>
+                    </div>
+                    <label>Objava</label>
+                    <div className={"form-floating"}>
+                        <textarea  onChange={event => setContent(event.target.value)} value={content}/></div>
+                    <button className="w-100 btn btn-lg btn-primary" type="submit">Ustvari objavo</button>
+                    
                 </form>
 
             </main>
