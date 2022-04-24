@@ -46,7 +46,7 @@ const CreatePost = ()=>{
                     <div className={"form-floating"}>
                         <textarea  onChange={event => setContent(event.target.value)} value={content}/></div>
                     <button className="w-100 btn btn-lg btn-primary" type="submit">Ustvari objavo</button>
-                    
+
                 </form>
 
             </main>
